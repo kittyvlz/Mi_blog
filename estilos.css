@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px dashed red;*/
+}
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+/*barra d enavegacion*/
+.nav{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #5c032b;
+    height: 50px;
+
+}
+.nav__items {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin:0;
+
+
+}
+.nav__link:hover{
+    background-color: #88345a;
+    border:4px #fff;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+/*encabezado de pagina */
+
+.encabezado {
+    padding: 100px 10px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.763) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.184) 100%), url(imagenes/banner.jpeg);
+    background-size: cover;
+    display:flex ;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.encabezado__texto{
+    padding-inline-end: 300px ;
+}
+.encabezado__texto h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff
+    
+}
+.encabezado__texto h2 {
+    font-size: 1.5;
+    color: #fcedfc
+}
+
+
+.mi-imagen {
+    width: 150px; ; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 800px;
+    margin-inline-start: 200px;
+    border: 3px solid #fff;
+}
+
+
+/*contenido principal de la pagina */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel__image {
+    width: 500px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: rgb(26, 25, 25);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5rem;
+}
+
+.carousel__button--prev {
+    left: 10px;
+}
+
+.carousel__button--next {
+    right: 10px;
+}
+
+.sobre-mi__titulo {
+    text-align: start;
+    margin-inline-start: 2rem;
+    font-size: 2rem;
+    color: #5c032b;
+    margin-top: 100px;
+}
+
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.sobre-mi__post {
+    width: auto;
+}  
+
+
+
+/* CIERRE DE PAGINA*/
+footer {
+    
+    padding: 150px;
+    background-color: #5c032b;
+    color: #fff;
+}
+
